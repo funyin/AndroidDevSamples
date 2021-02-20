@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="fav_networks_entries">
+        <item>Google +</item>
+        <item>Facebook</item>
+        <item>Gmail</item>
+        <item>Instagram</item>
+        <item>Twitter</item>
+    </string-array>
+
+    <string-array name="fav_networks_values">
+        <item>google_plus</item>
+        <item>facebook</item>
+        <item>gmail</item>
+        <item>instagram</item>
+        <item>twitter</item>
+    </string-array>
+</resources>

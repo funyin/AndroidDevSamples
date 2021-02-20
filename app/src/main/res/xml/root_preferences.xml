@@ -1,0 +1,53 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="@string/messages_header">
+
+        <EditTextPreference
+            app:key="signature"
+            app:title="@string/signature_title"
+            app:useSimpleSummaryProvider="true" />
+
+        <ListPreference
+            app:defaultValue="reply"
+            app:entries="@array/reply_entries"
+            app:entryValues="@array/reply_values"
+            app:key="reply"
+            app:title="@string/reply_title"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/sync_header">
+
+        <SwitchPreference
+            app:key="hello_preferences"
+            app:summaryOff="It isn't really a ggod day to work 😔 "
+            app:summaryOn="It's is a good day to practice preferences"
+            app:title="Hello preferences" />
+
+        <SwitchPreferenceCompat
+            app:dependency="hello_preferences"
+            app:key="attachment"
+            app:summaryOff="@string/attachment_summary_off"
+            app:summaryOn="@string/attachment_summary_on"
+            app:title="@string/attachment_title" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="My tests">
+
+        <EditTextPreference
+            app:title="Your name"
+            app:key="your_name"
+            app:useSimpleSummaryProvider="true"/>
+
+
+        <ListPreference
+            app:defaultValue="google_plus"
+            app:entries="@array/fav_networks_entries"
+            app:entryValues="@array/fav_networks_values"
+            app:key="fav_network"
+            app:title="You favorite network"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
